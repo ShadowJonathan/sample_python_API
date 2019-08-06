@@ -6,11 +6,11 @@ debugging = os.environ.get('debugging')
 options = {"swagger_ui": debugging}
 application = connexion.FlaskApp(
     __name__,
-    specification_dir='swagger/',
+    specification_dir='config/',
     options=options
     )
 application.add_api(
-    'swagger.yaml',
+    'openAPI.yaml',
     base_path='/api',
     arguments={'title': 'Sample API'}
     )
