@@ -1,0 +1,89 @@
+openapi: 3.0.1
+info:
+  version: 0.0.1
+  title: API World_X
+paths:
+  /getCity:
+    summary: Returns information about a given city
+    description: Returns information about a given city
+    get:
+      summary: Returns information about a given city
+      description: Returns information about a given city
+      operationId: controllers.api.get_city
+      responses:
+        default:
+          description: Default error sample response
+      tags:
+        - city
+  /getCityAll:
+    summary: Returns all city information
+    description: Returns all city information
+    get:
+      summary: Returns all city information
+      description: Returns all city information
+      operationId: controllers.api.get_city_all
+      responses:
+        default:
+          description: Default error sample response
+      tags:
+        - city
+  /getCountry:
+    summary: Returns information about a given country
+    description: Returns information about a given country
+    get:
+      summary: Returns information about a given country
+      description: Returns information about a given country
+      operationId: controllers.api.get_country
+      responses:
+        default:
+          description: Default error sample response
+      tags:
+        - country
+  /getCountryAll:
+    summary: Returns all country information
+    description: Returns all country information
+    get:
+      summary: Returns all country information
+      description: Returns all country information
+      operationId: controllers.api.get_country_all
+      responses:
+        default:
+          description: Default error sample response
+      tags:
+        - country
+  /getCountryData:
+    summary: Returns detailed information about a given country
+    description: Returns detailed information about a given country
+    get:
+      summary: Returns detailed information about a given country
+      description: Returns detailed information about a given country
+      operationId: controllers.api.get_countryinfo
+      responses:
+        default:
+          description: Default error sample response
+      tags:
+        - country
+  /getCountryLanguage:
+    summary: Returns language information about a given country
+    description: Returns language information about a given country
+    get:
+      summary: 'Returns language information about a given country'
+      description: 'Returns language information about a given country'
+      operationId: controllers.api.get_countrylanguage
+      responses:
+        default:
+          description: Default error sample response
+      tags:
+        - language
+  /getCountryLanguageAll:
+    summary: Returns all country language information
+    description: Returns all country language information
+    get:
+      summary: 'Returns all country language information'
+      description: 'Returns all country language information'
+      operationId: controllers.api.get_countrylanguage_all
+      responses:
+        default:
+          description: Default error sample response
+      tags:
+        - language
