@@ -8,6 +8,13 @@ paths:
     description: Returns information about a given city
     get:
       summary: Returns information about a given city
+      parameters: 
+        - in: query
+          name: name
+          schema:
+            type: string
+          required: true
+          description: the name of the city.
       description: Returns information about a given city
       operationId: controllers.api.get_city
       responses:
@@ -32,6 +39,13 @@ paths:
     description: Returns information about a given country
     get:
       summary: Returns information about a given country
+      parameters: 
+        - in: query
+          name: name
+          schema:
+            type: string
+          required: true
+          description: the name of the country
       description: Returns information about a given country
       operationId: controllers.api.get_country
       responses:
@@ -56,6 +70,13 @@ paths:
     description: Returns detailed information about a given country
     get:
       summary: Returns detailed information about a given country
+      parameters: 
+        - in: query
+          name: name
+          schema:
+            type: string
+          required: true
+          description: the name of the country
       description: Returns detailed information about a given country
       operationId: controllers.api.get_countryinfo
       responses:
@@ -65,6 +86,13 @@ paths:
         - country
   /getCountryLanguage:
     summary: Returns language information about a given country
+    parameters:
+      - in: query
+        name: name
+        schema:
+          type: string
+        required: true
+        description: the name of the language
     description: Returns language information about a given country
     get:
       summary: 'Returns language information about a given country'
