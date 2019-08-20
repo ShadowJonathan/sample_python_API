@@ -1,12 +1,10 @@
-import json
-import threading
 from orator import DatabaseManager, Model
 
 config = {
     'mysql': {
         'driver': 'mysql',
-        'host': 'localhost',
-        'database': 'localdb',
+        'host': 'Localhost',
+        'database': 'world_x',
         'user': 'root',
         'password': '',
         'prefix': ''
@@ -15,6 +13,3 @@ config = {
 
 db = DatabaseManager(config)
 Model.set_connection_resolver(db)
-
-
-

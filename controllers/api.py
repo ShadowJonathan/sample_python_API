@@ -1,6 +1,7 @@
 # Python core imports
 from threading import Thread
 import json as JSON
+
 # Local model imports
 from models.city import city
 from models.country import country
