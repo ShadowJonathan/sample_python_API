@@ -34,7 +34,7 @@ application.app.config.update(
 # Max payload (to restrict large file uploads)
 application.app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
 
-# Routes & Robots
+# Re-direct to Swagger/OpenAPI UI
 @application.app.route('/')
 def index():
     return redirect(
@@ -45,6 +45,7 @@ def index():
     )
 
 
+# Default robots reply
 @application.app.route('/robots.txt', methods=['GET'])
 def robots():
     return "User-agent: *\nDisallow: /"
