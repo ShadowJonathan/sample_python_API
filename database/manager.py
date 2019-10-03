@@ -2,8 +2,7 @@
 import os
 
 # Third-party imports
-from orator import DatabaseManager
-from orator import Model
+from orator import DatabaseManager, Model
 
 # Importing local models
 from models.city import city
@@ -13,25 +12,17 @@ from models.countrylanguage import countrylanguage
 
 
 class Database:
-
     db = None
-    config = {}
 
-    City = None
-    Country = None
-    CountryInfo = None
-    CountryLanguage = None
+    City = city
+    Country = country
+    CountryInfo = countryinfo
+    CountryLanguage = countrylanguage
 
     # Config
     config = {}
 
     def __init__(self):
-        # Bind Models to local variables
-        self.City = city
-        self.Country = country
-        self.CountryInfo = countryinfo
-        self.CountryLanguage = countrylanguage
-
         # Set config
         self.config = {
             'mysql': {
